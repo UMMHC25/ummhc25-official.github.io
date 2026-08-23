@@ -303,7 +303,51 @@
         grid-template-columns: 1fr;
       }
     }
-  </style>
+  
+/* ===== STANDARD UMMHC : GAMBAR DALAM KOTAK PUTIH ===== */
+.museum-card,
+.card,
+.gallery-card {
+    background:#fff !important;
+    border-radius:12px;
+    overflow:hidden !important;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.card-image-box,
+.museum-card .card-image-box,
+.image-box {
+    width:100%;
+    height:220px;
+    overflow:hidden !important;
+    background:#fff !important;
+}
+
+.card-image-box img,
+.museum-card img,
+.image-box img {
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    object-fit:contain !important;
+    display:block !important;
+    background:#fff;
+    box-sizing:border-box !important;
+}
+
+.museum-card:hover img {
+    transform:none !important;
+}
+
+@media(max-width:850px){
+    .card-image-box,
+    .museum-card .card-image-box,
+    .image-box{
+        height:200px;
+    }
+}
+
+</style>
 </head>
 
 <body>
@@ -347,37 +391,11 @@
       <section class="column">
         <h2 class="section-title">🏛️ Muzium</h2>
         <div class="cards-list">
-
-          <div class="museum-card">
-            <div class="card-image-box">
-              <img src="images/muzium-seni-asia.jpg" alt="Muzium Seni Asia" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Muzium Seni Asia</h3>
-              <p>Menempatkan koleksi seni bina, seramik, dan tekstil dari pelbagai rantau Asia.</p>
-            </div>
-          </div>
-
-          <div class="museum-card">
-            <div class="card-image-box">
-              <img src="images/muzium-anatomi.jpg" alt="Muzium Anatomi Perubatan" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Muzium Anatomi Perubatan</h3>
-              <p>Koleksi spesimen anatomi dan sejarah perubatan untuk tujuan pendidikan sains.</p>
-            </div>
-          </div>
-
-          <div class="museum-card">
-            <div class="card-image-box">
-              <img src="images/muzium-zoologi.jpg" alt="Muzium Zoologi" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Muzium Zoologi</h3>
-              <p>Pameran kepelbagaian fauna dan spesimen zoologi terawat dari seluruh Malaysia.</p>
-            </div>
-          </div>
-
+          <div class="museum-card"><div class="card-image-box"><img src="images/muzium-seni-asia.jpg" alt="Muzium Seni Asia"></div><div class="card-content"><h3>Muzium Seni Asia</h3><p>Koleksi seni Asia yang menghimpunkan pelbagai bahan warisan dan artifak budaya.</p></div></div>
+          <div class="museum-card"><div class="card-image-box"><img src="images/muzium-perubatan.jpg" alt="Muzium Perubatan Tan Sri Dr. Lim Wee Chai"></div><div class="card-content"><h3>Muzium Perubatan Tan Sri Dr. Lim Wee Chai</h3><p>Mempamerkan koleksi berkaitan sejarah perubatan dan perkembangan bidang kesihatan.</p></div></div>
+          <div class="museum-card"><div class="card-image-box"><img src="images/muzium-zoologi.jpg" alt="Muzium Zoologi"></div><div class="card-content"><h3>Muzium Zoologi</h3><p>Koleksi spesimen zoologi dan bahan berkaitan kepelbagaian fauna.</p></div></div>
+          <div class="museum-card"><div class="card-image-box"><img src="MUZIUM%20GEOLOGI.jpg" alt="Muzium Geologi"></div><div class="card-content"><h3>Muzium Geologi</h3><p>Koleksi batuan, mineral dan bahan geologi untuk pendidikan dan penyelidikan.</p></div></div>
+          <div class="museum-card"><div class="card-image-box"><img src="MUZIUM%20ETNOGRAFI%20MELAYU.jpg" alt="Muzium Etnografi Melayu"></div><div class="card-content"><h3>Muzium Etnografi Melayu</h3><p>Memaparkan warisan budaya Melayu melalui koleksi artifak dan tradisi masyarakat.</p></div></div>
         </div>
       </section>
 
@@ -385,37 +403,8 @@
       <section class="column">
         <h2 class="section-title">🖼️ Galeri</h2>
         <div class="cards-list">
-
-          <div class="museum-card">
-            <div class="card-image-box">
-              <img src="images/galeri-nazrin-shah.jpg" alt="Galeri Sultan Nazrin Shah" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Galeri Sultan Nazrin Shah</h3>
-              <p>Pameran sejarah, penceritaan warisan, dan pencapaian cemerlang warga UM.</p>
-            </div>
-          </div>
-
-          <div class="museum-card">
-            <div class="card-image-box">
-              <img src="images/galeri-rimba-ilmu.jpg" alt="Galeri Rimba Ilmu" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Galeri Rimba Ilmu</h3>
-              <p>Pusat maklumat biodiversiti flora dan konservasi alam sekitar kampus.</p>
-            </div>
-          </div>
-
-          <div class="museum-card">
-            <div class="card-image-box">
-              <img src="images/galeri-seni.jpg" alt="Galeri Seni UM" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Galeri Seni UM</h3>
-              <p>Ruang pameran seni visual bertema, karya pelajar, dan seniman jemputan.</p>
-            </div>
-          </div>
-
+          <div class="museum-card"><div class="card-image-box"><img src="images/galeri-nazrin-shah.jpg" alt="Galeri Sultan Nazrin Shah"></div><div class="card-content"><h3>Galeri Sultan Nazrin Shah</h3><p>Ruang pameran sejarah, seni dan warisan Universiti Malaya.</p></div></div>
+          <div class="museum-card"><div class="card-image-box"><img src="images/galeri-rimba-ilmu.jpg" alt="Galeri Rimba Ilmu"></div><div class="card-content"><h3>Galeri Rimba Ilmu</h3><p>Galeri berkaitan biodiversiti, alam sekitar dan khazanah ilmu.</p></div></div>
         </div>
       </section>
 
