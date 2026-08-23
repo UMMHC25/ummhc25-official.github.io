@@ -430,7 +430,87 @@
         width: 100%;
       }
     }
-  </style>
+  
+
+/* === KEMASAN VISUAL TAMBAHAN UMMHC === */
+body {
+  letter-spacing: 0.1px;
+}
+
+.card {
+  border: 1px solid rgba(128,0,0,0.08);
+  backdrop-filter: blur(3px);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(128,0,0,.18);
+}
+
+.card h2 {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 24px;
+  letter-spacing: .8px;
+  border-bottom: 2px solid #f1d77a;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.music-player {
+  border-top: 4px solid #800000;
+}
+
+.gallery img {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  box-shadow: 0 8px 18px rgba(0,0,0,.15);
+  transition: .3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+}
+
+nav {
+  box-shadow: 0 3px 12px rgba(0,0,0,.25);
+}
+
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -5px;
+  background: #FFD700;
+  transition: .3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@media(max-width:850px){
+  section {
+    padding: 25px 5%;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+}
+
+</style>
 </head>
 
 <body>
