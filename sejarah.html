@@ -540,7 +540,59 @@
         max-width: 100%;
       }
     }
-  </style>
+  
+/* ===== TAMBAHAN KAWALAN GAMBAR GLOBAL ===== */
+
+.card img,
+.box img,
+section img {
+    max-width: 100% !important;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box !important;
+}
+
+.card,
+.box,
+.founder-card {
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.founder-card img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 190px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    display: block !important;
+}
+
+.ad-popup-img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 80vh !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+@media(max-width:480px){
+    .card {
+        padding: 20px !important;
+    }
+
+    section img {
+        max-width:100% !important;
+        height:auto !important;
+    }
+}
+
+</style>
 </head>
 
 <body>
