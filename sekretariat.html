@@ -267,7 +267,38 @@
         margin: 20px 5%;
       }
     }
-  </style>
+  
+/* KAWALAN GAMBAR - FORMAT SERAGAM UMMHC */
+.card img,
+section img,
+main img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain !important;
+    box-sizing: border-box !important;
+}
+
+.card,
+.image-box,
+section {
+    overflow: hidden !important;
+}
+
+img {
+    overflow: hidden;
+}
+
+@media(max-width:850px){
+    .card img,
+    section img {
+        max-width:100% !important;
+    }
+}
+
+</style>
 </head>
 
 <body>
