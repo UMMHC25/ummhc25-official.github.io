@@ -1,974 +1,122 @@
-<!DOCTYPE html>
-<html lang="ms">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="3MooSAGjA9Aqjdldq0f4K9h3Ft1CknMscefnj5NdBMw">
-
-  <!-- KAWALAN CACHE KETAT UNTUK MEMAKSA MUAT TURUN GAMBAR BAHARU -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <title>Sejarah UMMHC | Kelab Muzium dan Warisan Universiti Malaya</title>
-
-  <meta name="application-name" content="Kelab Muzium dan Warisan Universiti Malaya">
-  <meta property="og:site_name" content="Kelab Muzium dan Warisan Universiti Malaya">
-  <meta name="description" content="Sejarah penubuhan Kelab Muzium dan Warisan Universiti Malaya (UMMHC), visi, misi, objektif dan barisan pengasas kelab.">
-  <meta name="keywords" content="Sejarah UMMHC, Pengasas UMMHC, Kelab Muzium Universiti Malaya, Warisan UM">
-  <meta name="author" content="Kelab Muzium dan Warisan Universiti Malaya">
-
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/f027da7aea0d7e46cbb27a1557b5df99e9e3d948/LOGO.png?v=10">
-
-  <!-- MUAT TURUN FONT ROYAL DARI GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Kelab Muzium dan Warisan Universiti Malaya",
-    "alternateName":"UMMHC",
-    "url":"https://ummhc25.github.io/ummhc25-official.github.io/sejarah.html",
-    "logo":"https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/f027da7aea0d7e46cbb27a1557b5df99e9e3d948/LOGO.png",
-    "description":"Sejarah dan latar belakang penubuhan UMMHC."
-  }
-  </script>
-
-  <meta property="og:title" content="Sejarah UMMHC | Kelab Muzium dan Warisan Universiti Malaya">
-  <meta property="og:description" content="Sejarah penubuhan, pengasas, visi, misi, dan objektif Kelab Muzium dan Warisan Universiti Malaya.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/f027da7aea0d7e46cbb27a1557b5df99e9e3d948/LOGO.png?v=10">
-  <meta property="og:url" content="https://ummhc25.github.io/ummhc25-official.github.io/sejarah.html">
-  <meta property="og:type" content="website">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-        url("https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/77527381-a7e9-48d4-b26f-6abc8b8e22df.png?v=10");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: #333;
-    }
-
-    /* GAYA POPUP IKLAN BERSEBELAHAN (FLEXBOX MODEN) */
-    .ad-popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.85);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    .ad-popup-content {
-      position: relative;
-      background: #ffffff;
-      border-radius: 15px;
-      max-width: 900px;
-      width: 100%;
-      max-height: 90vh;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-      overflow: hidden;
-      border: 3px solid #FFD700;
-      display: flex;
-      flex-direction: row;
-    }
-
-    .ad-popup-close {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      background: #800000;
-      color: #FFD700;
-      border: 2px solid #FFD700;
-      border-radius: 50%;
-      width: 35px;
-      height: 35px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 20;
-      transition: background 0.2s, transform 0.2s;
-    }
-
-    .ad-popup-close:hover {
-      background: #FFD700;
-      color: #800000;
-      transform: scale(1.1);
-    }
-
-    .ad-poster-col {
-      width: 45%;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .ad-popup-img {
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
-      display: block;
-    }
-
-    .ad-caption-col {
-      width: 55%;
-      padding: 30px 25px;
-      background: #ffffff;
-      overflow-y: auto;
-      max-height: 80vh;
-      text-align: justify;
-    }
-
-    .royal-heading {
-      font-family: 'Cinzel', 'Georgia', serif;
-      font-size: 26px;
-      font-weight: 800;
-      color: #800000;
-      text-align: center;
-      margin: 0 0 5px 0;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.4);
-    }
-
-    .royal-subheading {
-      font-family: 'Playfair Display', serif;
-      font-size: 15px;
-      font-weight: 600;
-      color: #b38f00;
-      text-align: center;
-      margin-bottom: 20px;
-      letter-spacing: 0.5px;
-      border-bottom: 2px solid #f2e6b7;
-      padding-bottom: 10px;
-    }
-
-    .ad-caption-text {
-      font-size: 13.5px;
-      line-height: 1.6;
-      color: #2c2c2c;
-      text-align: justify;
-    }
-
-    .ad-caption-text p {
-      margin: 0 0 12px 0;
-      text-align: justify;
-    }
-
-    .hashtags {
-      color: #800000;
-      font-weight: bold;
-      font-size: 12.5px;
-      margin-top: 15px;
-      line-height: 1.5;
-      text-align: left;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    /* MENU MERAH ATAS */
-    nav {
-      background: #800000;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      padding: 5px 15px;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 5px 12px;
-      font-weight: bold;
-      padding: 5px 0;
-      font-size: 14px;
-    }
-
-    nav a:hover, nav a.active {
-      color: #FFD700;
-      border-bottom: 2px solid #FFD700;
-    }
-
-    /* HEADER FULL */
-    header {
-      background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
-        url("https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/22188fa7-4a58-42ad-976e-851c391351c7.png?v=10");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: #800000;
-      width: 100%;
-      height: 0;
-      padding-top: 32%;
-      transition: background 0.3s ease-in-out;
-    }
-
-    /* BAR MERAH BAWAH HEADER */
-    .header-space {
-      height: 20px;
-      background: #800000;
-    }
-
-    /* MUSIC PLAYER */
-    .music-player {
-      background: white;
-      padding: 25px;
-      margin: 30px 10%;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-    }
-
-    .music-player h3 {
-      color: #800000;
-      text-align: center;
-    }
-
-    .music-player p {
-      text-align: center;
-    }
-
-    .music-player audio {
-      width: 100%;
-      margin: 15px 0;
-    }
-
-    #songName {
-      color: #800000;
-      font-weight: bold;
-      margin-top: 15px;
-      padding: 10px;
-      background: #fff5f5;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    /* CONTENT & TEKS */
-    section {
-      padding: 40px 10%;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-      overflow: hidden !important; /* HALANG LIMPAHAN ELEMEN */
-      box-sizing: border-box !important;
-    }
-
-    .card h2 {
-      color: #800000;
-      margin-top: 0;
-      text-align: center;
-    }
-
-    .card p, .box p {
-      line-height: 1.6;
-      text-align: justify;
-      text-justify: inter-word;
-    }
-
-    .box {
-      background: #fafafa;
-      border-left: 5px solid #800000;
-      padding: 20px;
-      margin-top: 15px;
-    }
-
-    .box ul {
-      list-style-position: inside;
-      padding-left: 0;
-      margin: 0;
-      line-height: 1.8;
-      text-align: justify;
-    }
-
-    /* STRUKTUR PENGASAS (PENAMBAHAN PEMBETULAN KETAT) */
-    .founders-grid {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: stretch;
-      gap: 15px;
-      margin-top: 20px;
-      width: 100%;
-      box-sizing: border-box !important;
-    }
-
-    .founder-card {
-      background: #fafafa;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 12px 8px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      flex: 1 1 180px;
-      max-width: 220px;
-      box-sizing: border-box !important;
-      overflow: hidden !important; /* HALANG GAMBAR DARI TERKELUAR */
-    }
-
-    .founder-card.lead-founder {
-      background: #fffdf8;
-      border: 1.5px solid #800000;
-      max-width: 350px !important;
-      width: 100% !important;
-      margin: 0 auto 20px auto;
-      box-sizing: border-box !important;
-    }
-
-    /* PEMBETULAN GAMBAR KETAT */
-    .founder-card img {
-      width: 100% !important;
-      max-width: 100% !important;
-      height: 190px !important;
-      object-fit: cover !important;
-      object-position: top center !important;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      display: block;
-      flex-shrink: 0;
-      box-sizing: border-box !important;
-    }
-
-    .founder-card.lead-founder img {
-      max-width: 200px !important;
-      height: 230px !important;
-    }
-
-    .founder-info {
-      font-size: 11px;
-      line-height: 1.35;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      width: 100%;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      text-align: center;
-    }
-
-    .founder-card.lead-founder .founder-info {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    .founder-info .name {
-      font-weight: bold;
-      font-size: 12px;
-      color: #800000;
-      margin-bottom: 6px;
-      min-height: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .founder-card.lead-founder .name {
-      font-size: 16.5px;
-      min-height: auto;
-    }
-
-    .founder-info .role-title {
-      font-weight: bold;
-      color: #111;
-      margin-bottom: 6px;
-      min-height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .founder-info .italic-text {
-      font-style: italic;
-    }
-
-    /* BUTANG NAVIGASI */
-    .btn-container {
-      text-align: center;
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .button, button:not(.menu-toggle):not(.ad-popup-close) {
-      display: inline-block;
-      background: #800000 !important;
-      color: white !important;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background 0.3s, color 0.3s;
-    }
-
-    .button:hover, button:not(.menu-toggle):not(.ad-popup-close):hover {
-      background: #FFD700 !important;
-      color: #800000 !important;
-    }
-
-    footer {
-      background: #800000;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    footer p {
-      text-align: center !important;
-      margin: 0;
-    }
-
-    /* RESPONSIVE DESIGN */
-    @media(max-width: 850px) {
-      .ad-popup-content {
-        flex-direction: column;
-        overflow-y: auto;
-      }
-
-      .ad-poster-col, .ad-caption-col {
-        width: 100%;
-        max-height: none;
-      }
-
-      nav {
-        justify-content: space-between;
-        padding: 10px 20px;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      nav a {
-        margin: 6px 0;
-        padding: 8px;
-        background: #660000;
-        border-radius: 5px;
-        text-align: center;
-      }
-
-      header {
-        padding-top: 50%;
-      }
-
-      section {
-        padding: 20px 5%;
-      }
-
-      .music-player {
-        margin: 20px 5%;
-      }
-    }
-
-    @media(max-width: 480px) {
-      .founder-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
-    }
-  
-/* ===== TAMBAHAN KAWALAN GAMBAR GLOBAL ===== */
-
-.card img,
-.box img,
-section img {
-    max-width: 100% !important;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box !important;
-}
-
-.card,
-.box,
-.founder-card {
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-}
-
-.founder-card img {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: 190px !important;
-    object-fit: cover !important;
-    object-position: center top !important;
-    display: block !important;
-}
-
-.ad-popup-img {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 80vh !important;
-    object-fit: contain !important;
-    display: block !important;
-}
-
-@media(max-width:480px){
-    .card {
-        padding: 20px !important;
-    }
-
-    section img {
-        max-width:100% !important;
-        height:auto !important;
-    }
-}
-
-</style>
-</head>
-
-<body>
-
-  <!-- POPUP IKLAN -->
-  <div class="ad-popup-overlay" id="adPopup">
-    <div class="ad-popup-content">
-      <button class="ad-popup-close" id="closeAdBtn" aria-label="Tutup Iklan">&times;</button>
-
-      <div class="ad-poster-col">
-        <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_08-50-33.jpg?v=10" alt="Iklan UMMHC - Jejak Warisan Negeri" class="ad-popup-img">
-      </div>
-
-      <div class="ad-caption-col">
-        <div class="royal-heading">✨ AKAN DATANG ✨</div>
-        <div class="royal-subheading">SATU SIRI: JEJAK WARISAN NEGERI 🌿</div>
-
-        <div class="ad-caption-text">
-          <p>Sejarah bukan sekadar untuk dikenang, tetapi untuk ditelusuri, dipelajari dan dihayati.</p>
-          <p>PSUM dan UMMHC bekerjasama dan akan membawa anda menyusuri sebuah jelajah ilmu ke Terengganu untuk menyingkap warisan, budaya dan sejarah yang menjadi sebahagian daripada identiti negeri di Pantai Timur.</p>
-          <p>Dari tinggalan sejarah hingga warisan budaya, setiap sudut menyimpan cerita, setiap warisan membawa makna. 🏛</p>
-          <p>Satu warisan.<br>Seribu cerita.<br>Bersiap sedia untuk sebuah pengalaman pembelajaran yang pastinya berbeza.</p>
-          <p><strong>SATU SIRI: JELAJAH WARISAN NEGERI</strong><br>PSUM x UMMHC<br><em>NANTIKAN…</em></p>
-
-          <div class="hashtags">
-            #PSUM #UMMHC #JelajahWarisanNegeri #Sejarah #Budaya #Warisan #Terengganu #UniversitiMalaya #PSUMxUMMHC #UMisONE
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- MENU MERAH ATAS -->
-  <nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka Menu">☰ MENU</button>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">UTAMA</a>
-      <a href="sejarah.html" class="active">TENTANG KAMI</a>
-      <a href="sekretariat.html">SEKRETARIAT</a>
-      <a href="muzium-galeri.html">MUZIUM DAN GALERI UNIVERSITI MALAYA</a>
-      <a href="aktiviti.html">AKTIVITI</a>
-      <a href="galeri.html">GALERI</a>
-      <a href="hubungi.html">HUBUNGI KAMI</a>
-    </div>
-  </nav>
-
-  <!-- HEADER GAMBAR FULL -->
-  <header id="mainHeader"></header>
-
-  <!-- BAR MERAH BAWAH HEADER -->
-  <div class="header-space"></div>
-
-  <!-- MUSIC PLAYER -->
-  <div class="music-player">
-    <h3>🎵 MAINKAN MUZIK KELAB MUZIUM DAN WARISAN UNIVERSITI MALAYA (UMMHC)</h3>
-    <p style="color:#800000; font-weight:bold;">
-      ✨ Muzik warisan akan dimainkan secara automatik untuk mengiringi perjalanan anda di laman rasmi Kelab Muzium dan Warisan (UMMHC).
-    </p>
-    <audio id="audioPlayer" controls preload="auto"></audio>
-    <p id="songName"></p>
-  </div>
-
-  <!-- KANDUNGAN UTAMA -->
-  <main id="app-content">
-    <section>
-
-      <div class="card">
-        <h2>PENGENALAN KELAB</h2>
-        <p>
-          Kelab Muzium dan Warisan Universiti Malaya (UMMHC) merupakan sebuah kelab mahasiswa rasmi yang berfokus kepada pemeliharaan, apresiasi, dan promosi muzium, galeri, serta khazanah warisan di Universiti Malaya. UMMHC berperanan sebagai platform penggerak aktiviti kebudayaan, keilmuan, dan sejarah dalam memupuk kesedaran warisan di kalangan warga kampus serta masyarakat luar.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>SEJARAH PENUBUHAN</h2>
-        <p>
-          Kelab Muzium dan Warisan Universiti Malaya merupakan sebuah kelab yang ditubuhkan untuk menjadi badan pelajar dalam mempromosikan Muzium dan Galeri yang terdapat di Universiti Malaya. Pembentukannya bermula pada 02 Oktober 2025 oleh Kurator dan empat mantan pelajar Latihan Industri di Muzium Perubatan Tan Sri Dr. Lim Wee Chai, Fakulti Perubatan, Universiti Malaya iaitu <strong>Encik Rizqullah Al-Bariq Bin Azmi</strong> (Kurator) bersama <strong>Mendiang Tan Aik Kai</strong>, <strong>Muhamad Faiz Azrin Bin Sapuwan</strong>, <strong>Muhammad Faisal Bin Zubir</strong>, <strong>Muhammad Haziq Bin Abdullah</strong> (Mantan Pelajar Latihan Industri). Setelah mendapat sokongan semua wakil muzium dan galeri di Universiti Malaya, borang pendaftaran penubuhan kelab telah dihantar pada 17 November 2025 dan diluluskan pada 02 Disember 2025 oleh Dato’ Seri Naib Canselor Universiti Malaya.
-        </p>
-        <p>
-          <strong>Pendaftaran Kelab Muzium dan Warisan Universiti Malaya</strong> disahkan secara rasmi pada 18 Disember 2025. Pencarian Majlis Tertinggi terus diadakan pada 19 Disember 2025, dan sebanyak 12 calon bertanding merebut enam jawatan tertinggi. Dengan bantuan <strong>Muhammad Hazim Bin Hambali</strong> sebagai <em>Penyelaras Media Instagram</em> Kelab Muzium dan Warisan Universiti Malaya, semuanya berjalan dengan lancar sehingga 24 Disember 2025, Mesyuarat Agung Tahunan Kelab diadakan buat kali pertama. Bermula hari itu, gerak kerja terus berjalan sehingga kini.
-        </p>
-        <p>
-          Bagi sesi 2025/2026 (tahun pertama penubuhan), kelab ini memiliki 48 orang ahli Sekretariat serta dinasihati oleh Lembaga Penasihat Kelab yang dianggotai pegawai-pegawai Universiti Malaya yang bekerja sebagai Kurator, Penyelia atau Ketua bagi Muzium dan Galeri yang terdapat di Universiti Malaya.
-        </p>
-      </div>
-
-      <!-- KAD PENGASAS BERSAMA -->
-      <div class="card">
-        <h2>PENGASAS BERSAMA</h2>
-
-        <!-- PENGASAS UTAMA (ENCIK BARIQ) -->
-        <div class="founder-card lead-founder">
-          <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_11-57-11.jpg?v=10" alt="Potret Encik Rizqullah Al-Bariq Bin Azmi" loading="lazy">
-          <div class="founder-info">
-            <div class="name"><strong>Encik Rizqullah Al-Bariq Bin Azmi</strong></div>
-            <div class="role-title">Pengasas Utama <br>Kelab Muzium dan Warisan Universiti Malaya</div>
-            <div class="italic-text">Kurator</div>
-            <div class="italic-text">Muzium Perubatan Tan Sri Dr. Lim Wee Chai,</div>
-            <div class="italic-text">Fakulti Perubatan, Universiti Malaya</div>
-          </div>
-        </div>
-
-        <!-- 5 PENGASAS SEBARIS -->
-        <div class="founders-grid">
-
-          <!-- PENGASAS 2 (KAI) -->
-          <div class="founder-card">
-            <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-26-50-Picsart-AiImageEnhancer-removebg-preview.png?v=10" alt="Potret Mendiang Tan Aik Kai" loading="lazy">
-            <div class="founder-info">
-              <div class="name"><strong>Mendiang Tan Aik Kai</strong></div>
-              <div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
-              <div class="italic-text">Mantan Pelajar Latihan Industri</div>
-              <div class="italic-text">Muzium Perubatan Tan Sri Dr. Lim Wee Chai,</div>
-              <div class="italic-text">Fakulti Perubatan, Universiti Malaya</div>
-            </div>
-          </div>
-
-          <!-- PENGASAS 3 (FAIZ) -->
-          <div class="founder-card">
-            <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-26-48-Picsart-AiImageEnhancer-removebg-preview.png?v=10" alt="Potret Muhamad Faiz Azrin Bin Sapuwan" loading="lazy">
-            <div class="founder-info">
-              <div class="name"><strong>Muhamad Faiz Azrin Bin Sapuwan</strong></div>
-              <div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
-              <div class="italic-text">Mantan Pelajar Latihan Industri</div>
-              <div class="italic-text">Muzium Perubatan Tan Sri Dr. Lim Wee Chai,</div>
-              <div class="italic-text">Fakulti Perubatan, Universiti Malaya</div>
-            </div>
-          </div>
-
-          <!-- PENGASAS 4 (FAISAL) -->
-          <div class="founder-card">
-            <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-20_23-01-48-removebg-preview-Picsart-AiImageEnhancer.png?v=10" alt="Potret Muhammad Faisal Bin Zubir" loading="lazy">
-            <div class="founder-info">
-              <div class="name"><strong>Muhammad Faisal Bin Zubir</strong></div>
-              <div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
-              <div class="italic-text">Mantan Pelajar Latihan Industri</div>
-              <div class="italic-text">Muzium Perubatan Tan Sri Dr. Lim Wee Chai,</div>
-              <div class="italic-text">Fakulti Perubatan, Universiti Malaya</div>
-            </div>
-          </div>
-
-          <!-- PENGASAS 5 (HAZIQ) -->
-          <div class="founder-card">
-            <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-13-55-Picsart-AiImageEnhancer-removebg-preview.png?v=10" alt="Potret Muhammad Haziq Bin Abdullah" loading="lazy">
-            <div class="founder-info">
-              <div class="name"><strong>Muhammad Haziq Bin Abdullah</strong></div>
-              <div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
-              <div class="italic-text">Mantan Pelajar Latihan Industri</div>
-              <div class="italic-text">Muzium Perubatan Tan Sri Dr. Lim Wee Chai,</div>
-              <div class="italic-text">Fakulti Perubatan, Universiti Malaya</div>
-            </div>
-          </div>
-
-          <!-- PENGASAS 6 (HAZIM) -->
-          <div class="founder-card">
-            <img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-20_21-35-00-removebg-preview-Picsart-AiImageEnhancer.png?v=10" alt="Potret Muhammad Hazim Bin Hambali" loading="lazy">
-            <div class="founder-info">
-              <div class="name"><strong>Muhammad Hazim Bin Hambali</strong></div>
-              <div class="role-title">Penyelaras Media<br>Kelab Muzium dan Warisan Universiti Malaya</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>VISI</h2>
-        <div class="box">
-          <p>
-            Menjadi sebuah kelab mahasiswa yang unggul dalam memelihara, mempromosikan dan memperkasakan warisan sejarah serta budaya melalui penglibatan aktif mahasiswa.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>MISI</h2>
-        <div class="box">
-          <ul>
-            <li>Memupuk kesedaran mahasiswa terhadap kepentingan warisan.</li>
-            <li>Menganjurkan program berkaitan sejarah, muzium dan budaya.</li>
-            <li>Mewujudkan jaringan kerjasama bersama pihak luar.</li>
-            <li>Menggalakkan penyelidikan dan perkongsian ilmu warisan.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>OBJEKTIF KELAB</h2>
-        <div class="box">
-          <ul>
-            <li>Meningkatkan pemahaman mahasiswa terhadap sejarah dan warisan.</li>
-            <li>Menyediakan platform pembelajaran melalui aktiviti muzium.</li>
-            <li>Menggalakkan penglibatan mahasiswa dalam program kebudayaan.</li>
-            <li>Memelihara dan mempromosikan khazanah warisan.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>PERANAN UMMHC</h2>
-        <div class="box">
-          <p>
-            UMMHC berperanan sebagai penghubung antara mahasiswa, institusi muzium, komuniti serta pihak berkaitan dalam usaha memperkembangkan ilmu dan kesedaran terhadap warisan.
-          </p>
-        </div>
-      </div>
-
-      <!-- KAD BUTANG HUBUNGI & KEMBALI KE LAMAN UTAMA -->
-      <div class="card">
-        <h2>HUBUNGI KAMI</h2>
-        <p style="text-align: center;">
-          Ingin mengetahui lebih lanjut mengenai penubuhan atau program UMMHC? Sila hubungi kami atau kembali ke halaman utama.
-        </p>
-        <div class="btn-container">
-          <a class="button" href="hubungi.html">HUBUNGI KAMI</a>
-          <a class="button" href="index.html">KEMBALI KE LAMAN UTAMA</a>
-        </div>
-      </div>
-
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025/2026 Kelab Muzium dan Warisan Universiti Malaya</p>
-  </footer>
-
-  <script>
-    // SIMPAN KEADAAN LOKASI AWAL SPA
-    const initialPage = window.location.pathname.split('/').pop() || 'sejarah.html';
-    history.replaceState({ page: initialPage }, '', window.location.href);
-
-    const adPopup = document.getElementById("adPopup");
-    const closeAdBtn = document.getElementById("closeAdBtn");
-
-    if (closeAdBtn && adPopup) {
-      closeAdBtn.addEventListener("click", () => {
-        adPopup.style.display = "none";
-      });
-
-      adPopup.addEventListener("click", (e) => {
-        if (e.target === adPopup) {
-          adPopup.style.display = "none";
-        }
-      });
-    }
-
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-    const mainHeader = document.getElementById("mainHeader");
-
-    if (menuToggle && navLinks) {
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    }
-
-    const songList = [
-      {
-        name: "Dato' Sri Siti Nurhaliza - Kesuma",
-        src: "https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/Dato'_Sri_Siti_Nurhaliza_Kesuma_Accurate_Lyrics_Reupload_lirik.mp3"
-      },
-      {
-        name: "Dato' Sri Siti Nurhaliza - Rencong",
-        src: "https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/Dato'%20Sri%20Siti%20Nurhaliza%20-%20Rencong%20(%20Lirik%20).mp3"
-      }
-    ];
-
-    let currentTrack = parseInt(sessionStorage.getItem('ummhc_track_index')) || 0;
-    const player = document.getElementById("audioPlayer");
-    const title = document.getElementById("songName");
-
-    function loadTrack(index) {
-      if (!player || !title) return;
-      player.src = songList[index].src;
-      title.innerHTML = `Sedang dimainkan (${index + 1}/${songList.length}): ${songList[index].name}`;
-      sessionStorage.setItem('ummhc_track_index', index);
-    }
-
-    if (player) {
-      loadTrack(currentTrack);
-
-      player.addEventListener("ended", () => {
-        currentTrack = (currentTrack + 1) % songList.length;
-        loadTrack(currentTrack);
-        player.play().catch(err => console.log("Gagal memutarkan lagu seterusnya secara automatik."));
-      });
-
-      function startAudio() {
-        player.play().then(() => {
-          ['click', 'touchstart', 'scroll'].forEach(evt => {
-            document.removeEventListener(evt, startAudio);
-          });
-        }).catch(() => {});
-      }
-
-      player.play().catch(() => {
-        ['click', 'touchstart', 'scroll'].forEach(evt => {
-          document.addEventListener(evt, startAudio, { once: true });
-        });
-      });
-    }
-
-    function updateHeaderImage(url) {
-      if (!mainHeader) return;
-      if (url.includes("sekretariat.html")) {
-        mainHeader.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/34c4eba3-5852-4688-a3a7-47fa59256273.png?v=10")';
-      } else {
-        mainHeader.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url("https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/22188fa7-4a58-42ad-976e-851c391351c7.png?v=10")';
-      }
-    }
-
-    function updateActiveNav(url) {
-      document.querySelectorAll('.nav-links a').forEach(a => {
-        const href = a.getAttribute('href');
-        if (href === url) {
-          a.classList.add('active');
-        } else {
-          a.classList.remove('active');
-        }
-      });
-    }
-
-    function loadPage(url) {
-      const cacheBustUrl = url.includes('?') ? `${url}&v=${Date.now()}` : `${url}?v=${Date.now()}`;
-      fetch(cacheBustUrl)
-        .then(response => {
-          if (!response.ok) throw new Error("Halaman tidak dijumpai");
-          return response.text();
-        })
-        .then(html => {
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-
-          const newSection = doc.querySelector('section');
-          const contentContainer = document.getElementById('app-content');
-
-          if (newSection && contentContainer) {
-            contentContainer.innerHTML = newSection.outerHTML;
-            document.title = doc.title || "Kelab Muzium dan Warisan Universiti Malaya";
-            updateHeaderImage(url);
-            updateActiveNav(url);
-            window.scrollTo(0, 0);
-            attachLinkListeners();
-            if (navLinks) navLinks.classList.remove("active");
-          }
-        })
-        .catch(err => console.error("Ralat muat halaman:", err));
-    }
-
-    function attachLinkListeners() {
-      document.querySelectorAll('a').forEach(link => {
-        const href = link.getAttribute('href');
-
-        if (href && href.endsWith('.html') && !href.startsWith('http') && !link.dataset.spaBound) {
-          link.dataset.spaBound = "true";
-          link.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (player && player.paused) {
-              player.play().catch(() => {});
-            }
-            loadPage(href);
-            history.pushState({ page: href }, '', href);
-          });
-        }
-      });
-    }
-
-    window.addEventListener('popstate', (e) => {
-      const page = e.state ? e.state.page : 'sejarah.html';
-      loadPage(page);
-    });
-
-    attachLinkListeners();
-  </script>
-
-</body>
-</html>
+<section>
+
+<div class="card">
+<h2>PENGENALAN KELAB</h2>
+<p>Kelab Muzium dan Warisan Universiti Malaya (UMMHC) merupakan sebuah kelab mahasiswa rasmi yang berfokus kepada pemeliharaan, apresiasi, dan promosi muzium, galeri serta khazanah warisan di Universiti Malaya. UMMHC berperanan sebagai platform penggerak aktiviti kebudayaan, keilmuan dan sejarah dalam memupuk kesedaran warisan di kalangan warga kampus serta masyarakat luar.</p>
+</div>
+
+<div class="card">
+<h2>SEJARAH PENUBUHAN</h2>
+<p>Kelab Muzium dan Warisan Universiti Malaya merupakan sebuah kelab yang ditubuhkan untuk menjadi badan pelajar dalam mempromosikan Muzium dan Galeri yang terdapat di Universiti Malaya. Pembentukannya bermula pada 02 Oktober 2025 oleh Kurator dan empat mantan pelajar Latihan Industri di Muzium Perubatan Tan Sri Dr. Lim Wee Chai, Fakulti Perubatan, Universiti Malaya.</p>
+
+<p>Pengasas utama ialah <strong>Encik Rizqullah Al-Bariq Bin Azmi</strong> (Kurator) bersama:</p>
+
+<ul>
+<li>Mendiang Tan Aik Kai</li>
+<li>Muhamad Faiz Azrin Bin Sapuwan</li>
+<li>Muhammad Faisal Bin Zubir</li>
+<li>Muhammad Haziq Bin Abdullah</li>
+</ul>
+
+<p>Setelah mendapat sokongan semua wakil muzium dan galeri di Universiti Malaya, borang pendaftaran penubuhan kelab telah dihantar pada 17 November 2025 dan diluluskan pada 02 Disember 2025 oleh Dato’ Seri Naib Canselor Universiti Malaya.</p>
+<p>Pendaftaran Kelab Muzium dan Warisan Universiti Malaya disahkan secara rasmi pada 18 Disember 2025. Pencarian Majlis Tertinggi diteruskan pada 19 Disember 2025 dan sebanyak 12 calon bertanding merebut enam jawatan tertinggi.</p>
+<p>Dengan bantuan Muhammad Hazim Bin Hambali sebagai Penyelaras Media Instagram Kelab Muzium dan Warisan Universiti Malaya, Mesyuarat Agung Tahunan Kelab telah berjaya diadakan buat kali pertama pada 24 Disember 2025.</p>
+<p>Bagi sesi 2025/2026 (tahun pertama penubuhan), kelab ini memiliki 48 orang ahli Sekretariat serta dinasihati oleh Lembaga Penasihat Kelab yang terdiri daripada pegawai Universiti Malaya yang berkhidmat sebagai Kurator, Penyelia atau Ketua bagi Muzium dan Galeri Universiti Malaya.</p>
+</div>
+
+<div class="card">
+<h2>PENGASAS BERSAMA</h2>
+<div class="founders-grid">
+
+<div class="founder-card lead-founder">
+<img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_11-57-11.jpg">
+<div class="founder-info">
+<div class="name"><strong>Encik Rizqullah Al-Bariq Bin Azmi</strong></div>
+<div class="role-title">Pengasas Utama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
+<div class="italic-text">Kurator</div>
+<div class="italic-text">Muzium Perubatan Tan Sri Dr. Lim Wee Chai,</div>
+<div class="italic-text">Fakulti Perubatan, Universiti Malaya</div>
+</div>
+</div>
+
+<div class="founder-card">
+<img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-26-50-Picsart-AiImageEnhancer-removebg-preview.png">
+<div class="founder-info">
+<div class="name"><strong>Mendiang Tan Aik Kai</strong></div>
+<div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
+<div class="italic-text">Mantan Pelajar Latihan Industri</div>
+</div>
+</div>
+<div class="founder-card">
+<img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-27-11-Picsart-AiImageEnhancer-removebg-preview.png">
+<div class="founder-info">
+<div class="name"><strong>Muhamad Faiz Azrin Bin Sapuwan</strong></div>
+<div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
+<div class="italic-text">Mantan Pelajar Latihan Industri</div>
+</div>
+</div>
+
+<div class="founder-card">
+<img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-27-34-Picsart-AiImageEnhancer-removebg-preview.png">
+<div class="founder-info">
+<div class="name"><strong>Muhammad Faisal Bin Zubir</strong></div>
+<div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
+<div class="italic-text">Mantan Pelajar Latihan Industri</div>
+</div>
+</div>
+
+<div class="founder-card">
+<img src="https://raw.githubusercontent.com/UMMHC25/ummhc25-official.github.io/main/photo_2026-08-17_19-28-02-Picsart-AiImageEnhancer-removebg-preview.png">
+<div class="founder-info">
+<div class="name"><strong>Muhammad Haziq Bin Abdullah</strong></div>
+<div class="role-title">Pengasas Bersama<br>Kelab Muzium dan Warisan Universiti Malaya</div>
+<div class="italic-text">Mantan Pelajar Latihan Industri</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>VISI</h2>
+<p>Menjadi sebuah kelab mahasiswa yang unggul dalam memelihara, mempromosikan dan mengembangkan apresiasi terhadap sejarah, budaya serta warisan melalui muzium dan galeri Universiti Malaya.</p>
+</div>
+
+<div class="card">
+<h2>MISI</h2>
+<ul>
+<li>Memupuk kesedaran mahasiswa terhadap kepentingan sejarah, budaya dan warisan.</li>
+<li>Menggalakkan penglibatan mahasiswa dalam aktiviti muzium, galeri dan pemuliharaan warisan.</li>
+<li>Menyediakan platform pendidikan, penyelidikan dan eksplorasi berkaitan sejarah serta kebudayaan.</li>
+<li>Menghubungkan warga Universiti Malaya dengan institusi warisan di dalam dan luar negara.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>OBJEKTIF PENUBUHAN</h2>
+<ul>
+<li>Mempromosikan muzium dan galeri Universiti Malaya kepada warga universiti serta masyarakat.</li>
+<li>Meningkatkan kesedaran tentang kepentingan pemeliharaan sejarah dan warisan.</li>
+<li>Menggalakkan aktiviti pendidikan melalui pameran, lawatan, seminar dan program kebudayaan.</li>
+<li>Membina jaringan kerjasama bersama agensi muzium, warisan dan kebudayaan.</li>
+<li>Melahirkan mahasiswa yang mempunyai pemahaman dan penghargaan terhadap warisan negara.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>PERANAN KELAB MUZIUM DAN WARISAN UNIVERSITI MALAYA</h2>
+<p>Kelab Muzium dan Warisan Universiti Malaya berfungsi sebagai medium yang menghubungkan mahasiswa dengan khazanah sejarah dan budaya yang terdapat di Universiti Malaya.</p>
+<ul>
+<li>Menganjurkan aktiviti berkaitan muzium, sejarah dan warisan.</li>
+<li>Membantu mempromosikan koleksi dan galeri Universiti Malaya.</li>
+<li>Menggalakkan penyertaan mahasiswa dalam program kebudayaan.</li>
+<li>Menjadi penghubung antara mahasiswa, muzium, galeri dan komuniti.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>PENUTUP</h2>
+<p>Kelab Muzium dan Warisan Universiti Malaya (UMMHC) menjadi sebuah wadah penting dalam memastikan sejarah, budaya dan warisan terus dihargai oleh generasi masa kini. Melalui aktiviti pendidikan, eksplorasi dan kolaborasi, kelab ini berusaha menjadikan warisan sebagai satu pengalaman yang dekat dengan mahasiswa serta masyarakat.</p>
+</div>
+
+</section>
